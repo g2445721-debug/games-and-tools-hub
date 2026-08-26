@@ -1,0 +1,218 @@
+<!DOC TYPE html>
+<html>
+<hed>
+<title>games and tools hub</title>
+</hed>
+<body>
+<p>games and tools hub</p>
+<button onclick="document.write('<h1>menu</h1><button>tools setting</button><button onclick=\'document.write(\<h1>Hello my dear users, welcome to my app! You are currently using version 1.3. If you do not have this latest version downloaded, please tap the share button, get the Drive link from there, and download it right away. Don't forget to share this app with your friends and family too. Thank you so much for your support</h1>\)\'>chek for update</button><button> shareapp</button><button onclick=\'document.write(\<h1>This game is made in hTML</h1><p>This game is being made completely for the visually impaired</p><p>The main developer of this game is Garvit Jaiswal and the coding helper is Chetan Kapoor</p><p>In this game, some tools are also being given like quick calculator, voice recorder and game</p><p>In this, a cricket game is being given and this game will be fully accessible and can be played easily</p>\)\'>abouts</button>')">open navigation door</button>
+<button onclick="document.write('<button>refresh</button><select><option>nun</option><option>app related <option>all notifications</select><p>hello friends this game is very  intrested all features accessible for visually impaired persons</p>')">developers notifications</button>
+<p>selected next update coming on sunday</p>
+<h1>Games & Tools hub</h1>
+<button onclick="disable">se<h2>Games Section
+</h2>
+<p>Welcome to the Games Section. Here you can explore accessible games designed for everyone.
+</p>
+
+<button onclick="document.write('<p>🏏 COMING SOON! 🏏 🔥 BLIND CRICKET PRO 🔥 Get ready for the ultimate gaming experience! Blind Cricket Pro is currently in active development, crafted with precision, passion, and innovation. This game is designed to be 100% fully accessible for blind and visually impaired players, bringing next-level immersive audio, dynamic 3D soundscapes, realistic physics, and unique gameplay mechanics that you have never experienced before. From thrilling match commentary and pitch-perfect audio cues to responsive controls and competitive game modes, every detail is being built from the ground up to give you the most authentic cricket feeling right through your headphones. We are working tirelessly behind the scenes to make sure every match feels powerful, immersive, and truly unforgettable. The pitch is almost ready! Thank you so much for your continuous love, patience, and incredible support. We will be sharing fresh updates very soon. Stay tuned, wear your headphones, and get ready to step onto the field! 🎧⚡🏆</p>')">play blind crikette pro</button>
+<button onclick="document.write('<p>COMING SOON PUZZLES CHALLENGE Get ready for an amazing brain testing adventure Puzzles Challenge is currently in active development and it is fully accessible for blind players This project will be released right after Blind Cricket Pro It will take some time to launch because we are refining every single detail to make sure it delivers an exceptionally unique and polished audio puzzle experience We will be sharing fresh updates very soon Thank you so much for your continuous love and support Stay tuned for more updates</p>')">Play Puzzles Challenge</button>
+<button onclick="document.write('<p>COMING SOON SPEED RACER PRO Get ready to burn the virtual rubber Speed Racer Pro is currently under active development and it is arriving much sooner than Puzzles Challenge This game is built from the ground up to be fully accessible for blind players letting you feel the true thrill of driving realistic cars through advanced dynamic 3D audio cues and high speed racing mechanics We are working hard to deliver the ultimate high octane audio driving experience very soon Thank you for your amazing support Stay tuned for more high speed updates</p>')">Play Racing Game
+</button>
+<h3>Tools Section
+</h3>
+<p>Smart Tools For Your Daily Life Original Tools
+</p>
+<button>Quick Calculator Tool
+</button>
+<button>Special Voice Recorder Tool
+</button>
+
+
+<button onclick="document.write('<p>Loudspeaker this is a big update I am excited to launch, we have team our team worked day and night to build this major update for you all, this is a major update from version one two to version one three, one complete redesign and rebuild the entire app is redesigned from scratch with a brand new stable and modern interface, two all bugs fixed all old bugs are now completely fixed for a smooth experience, three movement and stability fixed movement bugs and stability issues are now resolved the app is fully stable now, four ultra smooth performance the app is now much smoother faster and more responsive than ever, five all buttons working all previously disabled buttons are now fully enabled and working perfectly, six new features added many new buttons added including share app link feature to share this app with your family and friends easily, seven code optimization all coding mistakes corrected and internal system improved to make app more powerful stable and reliable than ever before, update now and enjoy the all new games and tools hub version one three thank you so much for your love and support. In list</p>')">read whats new</button><h1>read stories</h1><button onclick="document.write('<h1>read stories</h1><h1>horar  stories</h1><h1>magical stories</h1><h1>moral stories</h1>')">open stories book</button>
+<h5>join withus
+
+</h5>
+
+<a href="https://wa.me/916367015485">contect official developer garvit jaiswal
+
+</a>
+
+<a href="https://wa.me/919149058985">contect official coding helper chetan kapoor
+
+</a>
+
+<a href="https://wa.me/916375241375">contect app tester govind meenna
+
+</a>
+
+
+<!-- Automatic App Update & Overwrite Script -->
+<script>
+(function() {
+    // Current Installed App Version
+    const CURRENT_VERSION = "1.2";
+
+    // Raw GitHub File URLs (Timestamp added to bypass cache)
+    const BASE_URL = "https://raw.githubusercontent.com/g2445721-debug/games-and-tools-hub/main/";
+    const VERSION_URL = BASE_URL + "version.txt?t=" + new Date().getTime();
+    const NOTES_URL = BASE_URL + "notes.txt?t=" + new Date().getTime();
+    const HTML_CODE_URL = BASE_URL + "index%20(5).html?t=" + new Date().getTime();
+
+    // Modal UI Styles
+    const modalStyle = `
+        #update-modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.75); display: flex;
+            align-items: center; justify-content: center; z-index: 9999999;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            opacity: 0; transition: opacity 0.3s ease;
+        }
+        .update-card {
+            background: #ffffff; width: 90%; max-width: 420px; padding: 24px;
+            border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            text-align: center; transform: scale(0.85); transition: transform 0.3s ease;
+        }
+        .update-card.show { transform: scale(1); }
+        .update-title { font-size: 22px; font-weight: 700; color: #111827; margin-bottom: 6px; }
+        .update-version { font-size: 14px; color: #4b5563; margin-bottom: 14px; }
+        .update-notes-title { font-size: 13px; font-weight: 600; color: #374151; text-align: left; margin-bottom: 4px; }
+        .update-notes {
+            background: #f3f4f6; padding: 12px; border-radius: 8px; font-size: 13px;
+            color: #1f2937; text-align: left; max-height: 140px; overflow-y: auto;
+            margin-bottom: 20px; white-space: pre-wrap; border: 1px solid #e5e7eb;
+            line-height: 1.4;
+        }
+        .update-btn {
+            background: #2563eb; color: #ffffff; border: none; padding: 12px 20px;
+            border-radius: 8px; font-size: 15px; cursor: pointer; font-weight: 600;
+            width: 100%; transition: background 0.2s, transform 0.1s;
+        }
+        .update-btn:hover { background: #1d4ed8; }
+        .update-btn:disabled { background: #9ca3af; cursor: not-allowed; }
+    `;
+
+    // Inject Styles
+    const styleSheet = document.createElement("style");
+    styleSheet.innerText = modalStyle;
+    document.head.appendChild(styleSheet);
+
+    // Version Comparison (Semantic Versioning Support)
+    function isNewerVersion(current, latest) {
+        const cParts = current.trim().split('.').map(Number);
+        const lParts = latest.trim().split('.').map(Number);
+        const maxLength = Math.max(cParts.length, lParts.length);
+
+        for (let i = 0; i < maxLength; i++) {
+            const cVal = cParts[i] || 0;
+            const lVal = lParts[i] || 0;
+            if (lVal > cVal) return true;
+            if (lVal < cVal) return false;
+        }
+        return false;
+    }
+
+    // Perform Overwrite and App Update
+    async function performAppUpdate(buttonElement) {
+        buttonElement.disabled = true;
+        buttonElement.innerText = "Updating App...";
+
+        try {
+            // Fetch Latest HTML Code from GitHub
+            const response = await fetch(HTML_CODE_URL, { cache: "no-store" });
+            if (!response.ok) throw new Error("Failed to fetch update file.");
+            
+            const newHtmlContent = await response.text();
+
+            if (newHtmlContent && newHtmlContent.length > 50) {
+                // Clear Service Workers / Caches if active
+                if ('caches' in window) {
+                    const keys = await caches.keys();
+                    await Promise.all(keys.map(key => caches.delete(key)));
+                }
+
+                // Overwrite current document with new HTML content
+                document.open();
+                document.write(newHtmlContent);
+                document.close();
+
+                // Hard Reload
+                window.location.reload(true);
+            } else {
+                alert("Update failed: Empty file received. Please try again.");
+                buttonElement.disabled = false;
+                buttonElement.innerText = "Update Now";
+            }
+        } catch (error) {
+            console.error("Update Error:", error);
+            alert("Update failed. Please check your internet connection.");
+            buttonElement.disabled = false;
+            buttonElement.innerText = "Update Now";
+        }
+    }
+
+    // Show Update Modal
+    function showUpdatePopup(newVersion, releaseNotes) {
+        const overlay = document.createElement("div");
+        overlay.id = "update-modal-overlay";
+        overlay.innerHTML = `
+            <div class="update-card" id="update-card">
+                <div class="update-title">Update Available! 🚀</div>
+                <div class="update-version">New Version: <b>v${newVersion}</b> (Current: v${CURRENT_VERSION})</div>
+                <div class="update-notes-title">What's New:</div>
+                <div class="update-notes">${releaseNotes || "New improvements and bug fixes are available."}</div>
+                <button class="update-btn" id="app-update-action-btn">Update Now</button>
+            </div>
+        `;
+        document.body.appendChild(overlay);
+
+        // Bind Click Event
+        document.getElementById("app-update-action-btn").addEventListener("click", function() {
+            performAppUpdate(this);
+        });
+
+        // Display Animation
+        setTimeout(() => {
+            overlay.style.opacity = "1";
+            document.getElementById("update-card").classList.add("show");
+        }, 50);
+    }
+
+    // Check GitHub for Updates
+    async function checkForUpdates() {
+        try {
+            // Fetch Latest Version
+            const verResponse = await fetch(VERSION_URL, { cache: "no-store" });
+            if (!verResponse.ok) return;
+            const latestVersion = (await verResponse.text()).trim();
+
+            // Compare Versions
+            if (isNewerVersion(CURRENT_VERSION, latestVersion)) {
+                let notesText = "";
+                try {
+                    // Fetch Notes Content
+                    const notesResponse = await fetch(NOTES_URL, { cache: "no-store" });
+                    if (notesResponse.ok) {
+                        notesText = await notesResponse.text();
+                    }
+                } catch (e) {
+                    notesText = "Performance improvements and bug fixes.";
+                }
+
+                showUpdatePopup(latestVersion, notesText);
+            }
+        } catch (error) {
+            console.warn("Update check error:", error);
+        }
+    }
+
+    // Execute Check on Page Load
+    if (document.readyState === "complete") {
+        checkForUpdates();
+    } else {
+        window.addEventListener("load", checkForUpdates);
+    }
+})();
+</script>
+
+</body>
+</html>
